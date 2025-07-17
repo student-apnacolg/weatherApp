@@ -5,15 +5,18 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #343434 !important;
 }
 
 .cardBox {
   background: #343434;
-  width: 27vw !important;
-  padding: 1% !important;
-  height: 75vh !important;
-  margin: 12.5vh auto !important;
+  width: 30% !important;
+  height: 80% !important;
 }
 
 .card {
@@ -23,7 +26,7 @@ body {
   display: flex !important;
   color: white !important;
   text-transform: capitalize;
-  padding-block: 7% !important;
+  padding: 10% 5% !important;
   justify-content: space-between;
   border-radius: 50px !important;
   background: #343434 !important;
@@ -31,12 +34,12 @@ body {
 }
 
 .locationBox {
-  font-size: 2.2rem;
+  font-size: 200%;
 }
 
 .weatherBox {
   overflow: hidden;
-  font-size: 1.1rem;
+  font-size: 120%;
   font-style: italic;
 }
 
@@ -45,16 +48,16 @@ body {
 }
 
 .windBox {
-  font-size: 1.1rem;
+  font-size: 110%;
 }
 
 .tempBox {
-  font-size: 5rem;
+  font-size: 600%;
   font-weight: 400;
 }
 
 #tempSup {
-  font-size: 2.5rem;
+  font-size: 50%;
   vertical-align: super;
 }
 
@@ -71,4 +74,25 @@ body {
 
 .refreshBtn:hover {
   box-shadow: inset 10px 4px 10px #252525, inset 5px 5px 18px #4a4a4a;
+}
+
+@media only screen and (max-width: 500px) {
+  .cardBox {
+    width: 85% !important;
+    height: 85% !important;
+  }
+}
+
+@media (501px <= width <= 675px) {
+    .cardBox {
+    width: 75% !important;
+    height: 85% !important;
+  }
+}
+
+@media (676px <= width <= 975px) {
+    .cardBox {
+    width: 50% !important;
+    height: 85% !important;
+  }
 }
