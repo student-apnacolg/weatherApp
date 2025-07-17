@@ -1,0 +1,74 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343434 !important;
+}
+
+.cardBox {
+  background: #343434;
+  width: 27vw !important;
+  padding: 1% !important;
+  height: 75vh !important;
+  margin: 12.5vh auto !important;
+}
+
+.card {
+  text-align: center;
+  align-items: center;
+  height: 100% !important;
+  display: flex !important;
+  color: white !important;
+  text-transform: capitalize;
+  padding-block: 7% !important;
+  justify-content: space-between;
+  border-radius: 50px !important;
+  background: #343434 !important;
+  box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+}
+
+.locationBox {
+  font-size: 2.2rem;
+}
+
+.weatherBox {
+  overflow: hidden;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.weatherBox img{
+  transform: scale(1.5);
+}
+
+.windBox {
+  font-size: 1.1rem;
+}
+
+.tempBox {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#tempSup {
+  font-size: 2.5rem;
+  vertical-align: super;
+}
+
+.refreshBtn {
+  width: 6rem;
+  border: none;
+  height: 6rem;
+  color: #cdcdcd;
+  border-radius: 50%;
+  font-size: 2rem !important;
+  background: transparent;
+  box-shadow: 10px 5px 10px #252525, 5px 5px 18px #4a4a4a;
+}
+
+.refreshBtn:hover {
+  box-shadow: inset 10px 4px 10px #252525, inset 5px 5px 18px #4a4a4a;
+}
