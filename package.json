@@ -19,7 +19,6 @@
   "homepage": "https://github.com/student-apnacolg/nodeJs#readme",
   "dependencies": {
     "body": "^5.1.0",
-    "bootstrap": "^5.3.7",
     "express": "^5.1.0",
     "parser": "^0.1.4"
   }

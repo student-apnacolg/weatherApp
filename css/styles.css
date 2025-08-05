@@ -1,98 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 
 body {
-  width: 100vw;
   height: 100vh;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #343434 !important;
+  background-color: #555;
 }
 
-.cardBox {
-  background: #343434;
-  width: 30% !important;
-  height: 80% !important;
-}
-
-.card {
+.appContainer {
+  width: 90%;
   text-align: center;
-  align-items: center;
-  height: 100% !important;
-  display: flex !important;
-  color: white !important;
-  text-transform: capitalize;
-  padding: 10% 5% !important;
-  justify-content: space-between;
-  border-radius: 50px !important;
-  background: #343434 !important;
-  box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+  max-width: 500px;
 }
 
-.locationBox {
-  font-size: 200%;
+h1 {
+  margin-bottom: 1rem;
 }
 
-.weatherBox {
-  overflow: hidden;
-  font-size: 120%;
-  font-style: italic;
+.search {
+  gap: .5rem;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
 }
 
-.weatherBox img{
-  transform: scale(1.5);
-}
-
-.windBox {
-  font-size: 110%;
-}
-
-.tempBox {
-  font-size: 600%;
-  font-weight: 400;
-}
-
-#tempSup {
-  font-size: 50%;
-  vertical-align: super;
-}
-
-.refreshBtn {
-  width: 6rem;
+.search input {
+  width: 75%;
   border: none;
-  height: 6rem;
-  color: #cdcdcd;
-  border-radius: 50%;
-  font-size: 2rem !important;
-  background: transparent;
-  box-shadow: 10px 5px 10px #252525, 5px 5px 18px #4a4a4a;
+  outline: none;
+  font-size: 1rem;
+  padding: .6rem 1rem;
+  border-radius: .4rem;
 }
 
-.refreshBtn:hover {
-  box-shadow: inset 10px 4px 10px #252525, inset 5px 5px 18px #4a4a4a;
+.search button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: .4rem;
+  padding: .7rem 1rem;
+  background-color: #51A2FF;
 }
 
-@media only screen and (max-width: 500px) {
-  .cardBox {
-    width: 85% !important;
-    height: 85% !important;
-  }
+.search button:hover {
+  background-color: #155DFC;
 }
 
-@media (501px <= width <= 675px) {
-    .cardBox {
-    width: 75% !important;
-    height: 85% !important;
-  }
+.weather-Card {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: #444;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
 }
 
-@media (676px <= width <= 975px) {
-    .cardBox {
-    width: 50% !important;
-    height: 85% !important;
-  }
+.weather-card img {
+  width: 5rem;
+}
+
+.weather-card h3 {
+  font-size: 2.5rem;
+  margin: .7rem 0;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
 }

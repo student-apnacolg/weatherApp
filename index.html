@@ -3,33 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/b3a1302b55.js" crossorigin="anonymous"></script>
   <title>Weather App</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <div class="container-fluid cardBox">
-    <div class="card col">
-      <div class="locationBox">
-        <i class="fa-solid fa-location-dot me-1"></i>
-        <span id="location"></span>
-      </div>
-      <div class="weatherBox">
-        <img src="" id="wImg" alt="sunImg">
-        <p id="weather"></p>
-      </div>
-      <h4 class="tempBox">
-        <span id="temperature"></span><sup id="tempSup">o </sup>C
-      </h4>
-      <div class="windBox">
-        <p id="wind"></p>
-        <p id="humidity" class="mt-2"></p>
-      </div>
-      <button type="button" class="refreshBtn" onclick="window.location.reload()"><i class="fas fa-repeat"></i></button>
+  <div class="appContainer">
+    <h1>Weather App</h1>
+    <div class="search">
+      <input type="text" name="search" id="searchInput" placeholder="Enter City Name" />
+      <button onclick="getWeather()">Search</button>
     </div>
+    <div id="weatherCard" class="weather-Card hidden">
+      <h2 id="location"></h2>
+      <img src="" id="weatherIcon" alt="Weather Icon">
+      <p id="description"></p>
+      <h3>
+        <span id="temp"><sup>0</sup>c</span>
+      </h3>
+      <p id="wind"></p>
+      <p id="humidity"></p>
+    </div>
+    <p id="error" class="error-msg hidden"></p>
   </div>
   <script src="./js/script.js"></script>
 </body>
